@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer">
-        <link rel="stylesheet" href="./styles/styles.css">
+        <link rel="stylesheet" href="./css/main.min.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link
@@ -15,31 +15,31 @@
 	</head>
 	<body>
 <!-- Верхня лінія -->
-<header class="header">
-    <div class=" topline container">
-        <a class="top-logo-link link" href="./index.html"><span class="logo">Web<span class="top-logo">Studio</span></span>
-        </a>
-        <nav>
-            <ul class="navigation list">
-                <li class="nav-item"><a href="./index.html" class="link">Студія</a></li>
-                <li class="nav-item"><a href="./portfolio.html" class="link current">Портфоліо</a></li>
-                <li class="nav-item"><a href="#" class="link">Контакти</a></li>
-            </ul>
-        </nav>
-        <!-- Контакти -->
-        <ul class="list header-contacts">
-            <li class="head-cont-item"><a href="mailto:info@devstudio.com" class="header-mail link">
-                <svg class="icon-contact" width="16" height="12">
-                    <use href="./img/icons.svg#ico-envelope"></use>
-                </svg>
-                info@devstudio.com</a></li>
-            <li class="head-cont-item"><a href="tel:+380961111111" class="header-phone link">
-                <svg class="icon-contact" width="10" height="16">
-                    <use href="./img/icons.svg#ico-phone"></use>
-                </svg>
-                +38 096 111 11 11</a></li>
-        </ul>
-      </div>
+	<header class="header">
+    <div class="header__container container">
+			<a class="logo link" href="./index.html"><span class="logo__main">Web<span class="logo__accent">Studio</span></span>
+			</a>
+			<nav>
+				<ul class="header__nav list">
+					<li class="header__nav-item"><a href="./index.html" class="link">Студія</a></li>
+					<li class="header__nav-item"><a href="./portfolio.html" class="link current">Портфоліо</a></li>
+					<li class="header__nav-item"><a href="#" class="link">Контакти</a></li>
+				</ul>
+			</nav>
+			<!-- Контакти -->
+			<ul class="list header__contacts">
+				<li class="header__contacts-item"><a href="mailto:info@devstudio.com" class="header__mail link">
+					<svg class="header__contacts-icon" width="16" height="12">
+						<use href="./img/icons.svg#ico-envelope"></use>
+					</svg>
+					info@devstudio.com</a></li>
+				<li class="header__contacts-item"><a href="tel:+380961111111" class="header__phone link">
+					<svg class="header__contacts-icon" width="10" height="16">
+						<use href="./img/icons.svg#ico-phone"></use>
+					</svg>
+					+38 096 111 11 11</a></li>
+			</ul>
+		  </div>
 		</header>
 		<main>
 			<!-- Портфоліо -->
@@ -56,122 +56,122 @@
                         <li ><button class="button">Маркетинг</button></li>
                     </ul>
                                 <!-- Картки проектів -->
-                    <ul class="cards-list list">
-                        <li  class="portfolio-card">
-                            <a href="#" class="portfolio-card-link link">
-                                 <div class="card-overlay-frame">
+                    <ul class="portfolio list">
+                        <li  class="portfolio___card">
+                            <a href="#" class="portfolio__card-link link">
+                                 <div class="portfolio__overlay-frame">
                                     <img src="./img/projects/pr-1.jpeg" alt="сайт технокряк на екрані макбуку" width="370" height="294">
-                                    <p class="portfolio-card-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <p class="portfolio__overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                 </div>
         
-                                <div class="portfolio-description">
-                                    <h2 class="portfolio-item">Технокряк</h2>
-                                    <p class="portfolio-item-type">Веб-сайт</p>
+                                <div class="portfolio__description">
+                                    <h2 class="portfolio__project-name">Технокряк</h2>
+                                    <p class="portfolio__project-type">Веб-сайт</p>
                                 </div>
                             </a>
                         </li>
-                        <li class="portfolio-card">
-                            <a href="#" class="portfolio-card-link link">
-                                 <div class="card-overlay-frame">
+                        <li class="portfolio__card">
+                            <a href="#" class="portfolio__card-link link">
+                                 <div class="portfolio__overlay-frame">
                                     <img src="./img/projects/pr-2.jpeg" alt="постер дуель баскетболістів" width="370" height="294">
-                                    <p class="portfolio-card-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <p class="portfolio__overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                 </div>
                                 
-                                    <div class="portfolio-description">
-                                    <h2 class="portfolio-item">Постер New Orlean vs Golden Star</h2>
-                                    <p class="portfolio-item-type">Дизайн</p>
+                                    <div class="portfolio__description">
+                                    <h2 class="portfolio__project-name">Постер New Orlean vs Golden Star</h2>
+                                    <p class="portfolio__project-type">Дизайн</p>
                                 </div>
                             </a>
                         </li>
-                        <li class="portfolio-card">
+                        <li class="portfolio__card">
                             
-                            <a href="#" class="portfolio-card-link link">
-                                 <div class="card-overlay-frame">
+                            <a href="#" class="portfolio__card-link link">
+                                 <div class="portfolio__overlay-frame">
                                     <img src="./img/projects/pr-3.jpeg" alt="логотип ресторану" width="370" height="294">
-                                    <p class="portfolio-card-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <p class="portfolio__overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                 </div>
                                
-                                <div class="portfolio-description">
-                                    <h2 class="portfolio-item">Ресторан Seafood</h2>
-                                    <p class="portfolio-item-type">Додаток</p>
+                                <div class="portfolio__description">
+                                    <h2 class="portfolio__project-name">Ресторан Seafood</h2>
+                                    <p class="portfolio__project-type">Додаток</p>
                                 </div>
                             </a>
                         </li>
-                        <li class="portfolio-card">
-                            <a href="#" class="portfolio-card-link link">
-                                 <div class="card-overlay-frame">
+                        <li class="portfolio__card">
+                            <a href="#" class="portfolio__card-link link">
+                                 <div class="portfolio__overlay-frame">
                                     <img src="./img/projects/pr-4.jpeg" alt="чорні моніторні навушники" width="370" height="294">
-                                    <p class="portfolio-card-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <p class="portfolio__overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                 </div>
                                 
-                                <div class="portfolio-description">
-                                    <h2 class="portfolio-item">Проект Prime</h2>
-                                    <p class="portfolio-item-type">Маркетинг</p>
+                                <div class="portfolio__description">
+                                    <h2 class="portfolio__project-name">Проект Prime</h2>
+                                    <p class="portfolio__project-type">Маркетинг</p>
                                 </div>
                             </a>
                         </li>
-                        <li class="portfolio-card">
-                            <a href="#" class="portfolio-card-link link">
-                                 <div class="card-overlay-frame">
+                        <li class="portfolio__card">
+                            <a href="#" class="portfolio__card-link link">
+                                 <div class="portfolio__overlay-frame">
                                     <img src="./img/projects/pr-5.jpeg" alt="дві картонні коробки" width="370" height="294">
-                                    <p class="portfolio-card-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <p class="portfolio__overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                 </div>
                                
-                                <div class="portfolio-description">
-                                    <h2 class="portfolio-item">Проект Boxes</h2>
-                                    <p class="portfolio-item-type">Додаток</p>
+                                <div class="portfolio__description">
+                                    <h2 class="portfolio__project-name">Проект Boxes</h2>
+                                    <p class="portfolio__project-type">Додаток</p>
                                 </div>
                             </a>
                         </li>
-                        <li class="portfolio-card">
-                            <a href="#" class="portfolio-card-link link">
-                                 <div class="card-overlay-frame">
+                        <li class="portfolio__card">
+                            <a href="#" class="portfolio__card-link link">
+                                 <div class="portfolio__overlay-frame">
                                     <img src="./img/projects/pr-6.jpeg" alt="веб-сайт на екрані аймака" width="370" height="294">
-                                    <p class="portfolio-card-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <p class="portfolio__overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                 </div>
                                
-                                <div class="portfolio-description">
-                                    <h2 class="portfolio-item">Inspiration has no Borders</h2>
-                                    <p class="portfolio-item-type">Веб-сайт</p>
+                                <div class="portfolio__description">
+                                    <h2 class="portfolio__project-name">Inspiration has no Borders</h2>
+                                    <p class="portfolio__project-type">Веб-сайт</p>
                                 </div>
                             </a>
                         </li>
-                        <li class="portfolio-card">
-                            <a href="#" class="portfolio-card-link link">
-                                 <div class="card-overlay-frame">
+                        <li class="portfolio__card">
+                            <a href="#" class="portfolio__card-link link">
+                                 <div class="portfolio__overlay-frame">
                                     <img src="./img/projects/pr-7.jpeg" alt="розворот журналу" width="370" height="294">
-                                    <p class="portfolio-card-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <p class="portfolio__overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                 </div>
                                 
-                                <div class="portfolio-description">
-                                    <h2 class="portfolio-item">Видання Limited Edition</h2>
-                                    <p class="portfolio-item-type">Дизайн</p>
+                                <div class="portfolio__description">
+                                    <h2 class="portfolio__project-name">Видання Limited Edition</h2>
+                                    <p class="portfolio__project-type">Дизайн</p>
                                 </div>
                             </a>
                         </li>
-                        <li class="portfolio-card">
-                            <a href="#" class="portfolio-card-link link">
-                                 <div class="card-overlay-frame">
+                        <li class="portfolio__card">
+                            <a href="#" class="portfolio__card-link link">
+                                 <div class="portfolio__overlay-frame">
                                     <img src="./img/projects/pr-8.jpeg" alt="дизайн ярлика з логотипом" width="370" height="294">
-                                    <p class="portfolio-card-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <p class="portfolio__overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                 </div>
                               
-                                <div class="portfolio-description">
-                                    <h2 class="portfolio-item">Проект LAB</h2>
-                                    <p class="portfolio-item-type">Маркетинг</p>
+                                <div class="portfolio__description">
+                                    <h2 class="portfolio__project-name">Проект LAB</h2>
+                                    <p class="portfolio__project-type">Маркетинг</p>
                                 </div>
                             </a>
                         </li>
-                        <li class="portfolio-card">
-                            <a href="#" class="portfolio-card-link link">
-                                 <div class="card-overlay-frame">
+                        <li class="portfolio__card">
+                            <a href="#" class="portfolio__card-link link">
+                                 <div class="portfolio__overlay-frame">
                                     <img src="./img/projects/pr-9.jpeg" alt="веб-сайт на екрані макбука" width="370" height="294">
-                                    <p class="portfolio-card-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <p class="portfolio__overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                 </div>
                                
-                                <div class="portfolio-description">
-                                    <h2 class="portfolio-item">Growing Bussines</h2>
-                                    <p class="portfolio-item-type">Додаток</p>
+                                <div class="portfolio__description">
+                                    <h2 class="portfolio__project-name">Growing Bussines</h2>
+                                    <p class="portfolio__project-type">Додаток</p>
                                 </div>
                             </a>
                         </li>
@@ -182,53 +182,53 @@
 
 		<!-- Підвал -->
 		<footer class="footer">
-			<div class="container footer-block">
-				<div class="footer-address">
-				<a href="./index.html" class="link bottom-logo-link">
-					<span class="logo">Web<span class="bottom-logo">Studio</span></span>
+			<div class="container footer__block">
+				<div>
+				<a href="./index.html" class="logo--bottom link">
+					<span class="logo__main">Web<span class="logo__accent--bottom">Studio</span></span>
 				</a>
 				<address>
-					<ul class="address-list list">
-						<li class="map">
+					<ul class="footer__contacts list">
+						<li>
 							<a
 								href="https://goo.gl/maps/VXcRh9cTKy1x3ezA7"
-								class="map-link link"
+								class="footer__map link"
 								target="blank"
 								rel="noopener noreferrer nofollow"
 							>
 								м. Київ, пр-т Лесі Українки, 26
 							</a>
 						</li>
-						<li class="footer-contact"><a href="mailto:info@devstudio.com" class="footer-link link">info@devstudio.com</a></li>
-						<li class="footer-contact"><a href="tel:+380961111111" class="footer-link link">+38 096 111 11 11</a></li>
+						<li><a href="mailto:info@devstudio.com" class="footer__mail link">info@devstudio.com</a></li>
+						<li><a href="tel:+380961111111" class="footer__phone link">+38 096 111 11 11</a></li>
 					</ul>
 				</address>
 				</div>
-				<div class="footer-social-links">
-					<p class="footer-social">Приєднуйтесь</p>
-					<ul class="footer-social-list list">
-						<li class="footer-social-item">
-							<a href="" class="footer-social-link">
-								<svg class="footer-icons" width="20" height="20">
+				<div class="footer-social">
+					<p class="footer-social__header">Приєднуйтесь</p>
+					<ul class="footer-social__list list">
+						<li class="footer-social__item">
+							<a href="" class="footer-social__link">
+								<svg class="footer-social__icon" width="20" height="20">
 									<use href="./img/icons.svg#ico-instagram"></use>
 								</svg>
 							</a>
 						</li>
-						<li class="footer-social-item">
-							<a href="" class="footer-social-link">
-								<svg class="footer-icons" width="20" height="20">
+						<li class="footer-social__item">
+							<a href="" class="footer-social__link">
+								<svg class="footer-social__icon" width="20" height="20">
 									<use href="./img/icons.svg#ico-twitter"></use>
 								</svg>
 							</a>
-						</li><li class="footer-social-item">
-							<a href="" class="footer-social-link">
-								<svg class="footer-icons" width="20" height="20">
+						</li><li class="footer-social__item">
+							<a href="" class="footer-social__link">
+								<svg class="footer-social__icon" width="20" height="20">
 									<use href="./img/icons.svg#ico-facebook"></use>
 								</svg>
 							</a>
-						</li><li class="footer-social-item">
-							<a href="" class="footer-social-link">
-								<svg class="footer-icons" width="20" height="20">
+						</li><li class="footer-social__item">
+							<a href="" class="footer-social__link">
+								<svg class="footer-social__icon" width="20" height="20">
 									<use href="./img/icons.svg#ico-linkedin"></use>
 								</svg>
 							</a>
@@ -238,11 +238,11 @@
 				</div>
 				
 					<form name="subscription">
-						<div class="footer-sub-form">
-							<label for="sub-btn" class="sub-label">Підпишіться на розсилку</label>
-							<div class="sub-input-btn">
-								<input id="sub-btn" name="e-mail" type="email" class="footer-sub-input" placeholder="E-mail">
-								<button type="submit" class="sub-btn" ><span class="sub-btn-text">Підписатися</span><svg class="footer-icons" width="24" height="24">
+						<div class="subscription">
+							<label for="sub-btn" class="subscription__label">Підпишіться на розсилку</label>
+							<div class="subscription__form">
+								<input id="sub-btn" name="e-mail" type="email" class="subscription__input-mail" placeholder="E-mail">
+								<button type="submit" class="subscription__btn" ><span class="subscription__btn-text">Підписатися</span><svg class="subscription__btn-icon" width="24" height="24">
 									<use href="./img/icons.svg#ico-send"></use>
 								</svg></button>
 							</div>

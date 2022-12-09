@@ -25,6 +25,11 @@
   --overlay-bg-color: rgba(33, 150, 243, 0.9);
 }
 
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: var(--main-text-color);
@@ -138,7 +143,7 @@ svg path {
 .topline.container {
   display: flex;
   align-items: center;
-  background-color: var(--topline-bg-color);
+  background-color: var(--accent-text-color);
 }
 
 .navigation {
@@ -412,10 +417,6 @@ margin-right: 10px;
 /* Особливості - заголовок секції прихований */
 
 
-.visually-hidden {
-  position: fixed;
-  transform: scale(0);
-}
 
 .features-list {
   display: flex;
